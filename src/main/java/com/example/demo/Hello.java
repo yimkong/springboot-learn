@@ -34,4 +34,14 @@ public class Hello {
     private String my() {
         return config.getName();
     }
+
+    @GetMapping("/myage")
+    private int myage() {
+        return config.getAge();
+    }
+
+    @GetMapping("/weight")
+    private int weight() {
+        return config.getWeight();
+    }
 }
