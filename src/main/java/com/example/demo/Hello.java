@@ -16,9 +16,11 @@ public class Hello {
     @Autowired
     private Environment env;
     @Value("${server.port}")
-    private  String port;
+    private String port;
     @Autowired
     private MyConfig config;
+    @Autowired
+    private Async async;
 
     @GetMapping("/hello")
     private String hello() {
@@ -44,4 +46,11 @@ public class Hello {
     private int weight() {
         return config.getWeight();
     }
+
+    @GetMapping("/testAsync")
+    private void async() {
+        System.err.println(Thread.currentThread().getName());
+        async.save();
+    }
+
 }
