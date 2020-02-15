@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  * author yg
- * description 自定义端点 TODO 不成功待查问题
+ * description 自定义端点
  * http://localhost:8080/actuator/user
  * date 2020/2/15
  */
