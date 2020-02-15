@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * author yg
- * description 配置异步线程
+ * description 配置异步线程池
  * date 2020/2/15
  */
 @Configuration
