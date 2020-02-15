@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.async.Async;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
