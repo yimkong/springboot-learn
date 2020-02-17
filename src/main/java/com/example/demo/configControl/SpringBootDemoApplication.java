@@ -1,16 +1,19 @@
-package com.example.demo;
+package com.example.demo.configControl;
 
+import com.example.demo.DemoApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableAsync;
 
+/**
+ * author yg
+ * description
+ * date 2020/2/17
+ */
+@EnableUserClient
 @SpringBootApplication
-@EnableAsync
-public class DemoApplication {
+public class SpringBootDemoApplication {
 
     public static void main(String[] args) {
-        new StartCommand(args);
         SpringApplication.run(DemoApplication.class, args);
     }
-
 }
